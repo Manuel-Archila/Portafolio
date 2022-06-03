@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'ITC Benguiat Std';
+  src: url('fonts/ITC\ Benguiat\ Std\ Bold.woff2');
+}
+
+.infocontainer{
+  width: 1000px;
+  height: 500px;
+  display: grid;
+  place-items: center;
+}
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'ITC Benguiat Std';
+  font-size: 90px;
+  font-weight: 500;
+}
+
+.wrapper{
+  box-sizing: content-box;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.words{
+  overflow: hidden;
+}
+
+span{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-left: 10px;
+  animation: spin_words 6s infinite;
+  background-image: linear-gradient(to right, #7b4397, #dc2430);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@keyframes spin_words{
+  10%{
+    transform:translateY(-112%);
+  }
+ 25%{
+    transform:translatey(-100%);
+  }
+  35%{
+    transform:translatey(-212%);
+  }
+  50%{
+    transform:translateY(-200%);
+  }
+  60%{
+    transform:translateY(-312%);
+  }
+  75%{
+    transform:translatey(-300%);
+  }
+  85%{
+    transform:translatey(-412%);
+  }
+  100%{
+    transform:translatey(-400%);
+  }
+}
+
+.nombre{
+  color:white;
+  background: linear-gradient(to right, #43cea2, #185a9d); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

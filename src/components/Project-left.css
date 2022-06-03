@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'ITC Benguiat Std';
+  src: url('fonts/ITC\ Benguiat\ Std\ Bold.woff2');
+}
+
+.project-container{
+  width: 850px;
+  height: 225px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.projimage{
+  height: 225px;
+  width: 450px;
+}
+
+.project-image{
+  width: 450px;
+  height: 225px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.projdesc{
+  width: 350px;
+  height: 225px;
+}
+
+.project-title{
+  font-family: 'ITC Benguiat Std';
+  font-size: 24px;
+  background: linear-gradient(to right, #9d50bb, #6e48aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.project-desc{
+  width: 350px;
+  height: 197px;
+  font-family: 'ITC Benguiat Std';
+  font-size: 17px;
+  background: linear-gradient(to right, #b993d6, #8ca6db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}

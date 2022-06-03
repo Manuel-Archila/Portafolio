@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'ITC Benguiat Std';
+  src: url('fonts/ITC\ Benguiat\ Std\ Bold.woff2');
+}
+
+.projects-cont{
+  width: 1200px;
+  height: 1650px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.title{
+  align-self: center;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #24c6dc, #514a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
