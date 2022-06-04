@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'ITC Benguiat Std';
+  src: url('fonts/ITC\ Benguiat\ Std\ Bold.woff2');
+}
+
 *{
   margin: 0;
   padding: 0;
