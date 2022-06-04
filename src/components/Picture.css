@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'ITC Benguiat Std';
-  src: url('fonts/ITC\ Benguiat\ Std\ Bold.woff2');
+  src: url('fonts/ITCBenguiatStdBold.woff2');
 }
-
 .picture-box{
   width: 1000px;
   height: 400px;

@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'ITC Benguiat Std';
-  src: url('fonts/ITC\ Benguiat\ Std\ Bold.woff2');
+  src: url('fonts/ITCBenguiatStdBold.woff2');
 }
-
 .contact-cont{
   width: 1495px;
   height: 150px;
