@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'ITC Benguiat Std';
+  src: url('fonts/ITC\ Benguiat\ Std\ Bold.woff2');
+}
+
+.texto{
+  font-family: 'ITC Benguiat Std';
+  font-size: 20px;
+  background: linear-gradient(to right, #614385, #516395);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-container{
+  display: flex;
+  width: 1200px;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillset-title{
+  font-family:'ITC Benguiat Std';
+  background: linear-gradient(to right, #614385, #516395);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.figma{
+  background-image: url('../assets/figma.png');
+}
+
+.git{
+  background-image: url('../assets/git.png');
+  transform: rotate(315deg);
+}
+
+.eslint{
+  background-image: url('../assets/eslint.png');
+}
+
+.tests{
+  background-image: url('../assets/jest.png');
+  transform: rotate(235deg);
+}
+
+.postgres{
+  background-image: url('../assets/postgres.png');
+  transform: rotate(135deg);
+}
+
+.unity{
+  background-image: url('../assets/unity.png');
+  transform: rotate(60deg);
+}
+
+.android{
+  background-image: url('../assets/andoidstudio.png');
+  transform: rotate(90deg);
+}
+
+.scrum{
+  background-image: url('../assets/scrum.png');
+  transform: rotate(45deg);
+}
+
+.figma, .git, .eslint, .tests, .unity, .postgres, .android, .scrum{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu{
+  margin-top: 20px;
+  position:relative;
+  width: 450px;
+  height: 450px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li{
+  background-color: #040d15;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  position: absolute;
+  list-style: none;
+  transition: 0.5s;
+  transition-delay: (calc(0.1s));
+  transform-origin: 225px;
+  left: 0;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(225px);
+}
+
+.menu.active li{
+  transform: rotate(calc(360deg / 8 * var(--i)));
+}
+
+.toggle{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #07131f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  cursor: pointer;
+  transition: transform 1s;
+  font-size: 20px;
+}
+
+.menu.active .toggle{
+  transform: rotate(360deg);
+  animation: none
+}

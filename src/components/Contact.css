@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'ITC Benguiat Std';
+  src: url('fonts/ITC\ Benguiat\ Std\ Bold.woff2');
+}
+
+.contact-cont{
+  width: 1495px;
+  height: 150px;
+  display:flex;
+  flex-direction: column;
+}
+
+.title-contact{
+  font-family: 'ITC Benguiat Std';
+  font-size: 40px;
+  background: linear-gradient(to right, #4cb8c4, #3cd3ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 20px;
+  height: 50px;
+}
+
+.logo-holder{
+  height: 100px;
+  width: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.github{
+  background-image: url('../assets/github.png');
+}
+
+.linkedin{
+  background-image: url('../assets/linkedin.png');
+}
+
+.github, .linkedin{
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+ul{
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+
+ul li{
+  position: relative;
+  list-style: none;
+}
+
+ul li a{
+  position: relative;
+  width: 80px;
+  display: inline-block;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+ul li a:hover{
+  transform: translateY(-20px);
+}
+
+ul li a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s;
+}
+
+ul li a:hover::before{
+  transform: skewX(45deg) translateX(-150px);
+}

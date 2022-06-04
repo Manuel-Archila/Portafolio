@@ -2,10 +2,12 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import './App.css'
+import Contact from './components/Contact'
 import Info from './components/Info'
 import Languages from './components/Languages'
 import Picture from './components/Picture'
 import Projects from './components/Projects'
+import Skillset from './components/Skillset'
 
 const App = () => {
   useEffect(() => {
@@ -29,6 +31,8 @@ const App = () => {
       <Picture />
       <Projects />
       <Languages />
+      <Skillset />
+      <Contact />
     </div>
   )
 }

@@ -8,6 +8,7 @@
   height: 500px;
   display: grid;
   place-items: center;
+  margin-bottom: 150px;
 }
 
 *, *::before, *::after{
